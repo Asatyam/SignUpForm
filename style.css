@@ -3,6 +3,9 @@
     padding: 0;
     font-family: Helvetica, Verdana, sans-serif;
 }
+:root{
+    --input-color:##FFFFF0;
+}
 html{
     height: 100%;
     width: 100vw;
@@ -58,12 +61,77 @@ body{
     font-size: 3rem;
 }
 
-.right {
-    background-color: aqua;
-    height: 100%;
-    width: 60%;
-}
 .credits a{
     text-decoration: none;
     color:white;
+}
+
+
+.right {
+    background-color: #f6f7f8;
+    height: 100%;
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+}
+.right>*{
+    flex: 1;;
+}
+.text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+
+    padding: 30px;
+}
+.description {
+    margin-bottom: 20px;
+
+}
+
+
+fieldset>h3{
+    padding:10px;
+    color:rgba(40,40,40,0.7);
+}
+
+fieldset{
+    background-color:var(--input-color);
+    box-shadow: 12px 5px 5px 1px rgba(0, 0, 255, .2);
+}
+form{
+        width: 100%;
+}
+
+.container{
+    display: flex;
+    padding:20px;
+    gap:10px;
+    flex-wrap: wrap;
+}
+.form-element{
+
+    padding:10px;
+    display: flex;
+    flex-direction: column;
+    gap:5px;
+    width:20vw;
+}
+label{
+    color:rgba(30,40,40,0.6)
+}
+input{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    font-size:1.2rem;
+    padding:3px 10px;
+    background-color: var(--input-color);
+}
+input:focus{
+    outline: none;
+    border-top: none;
+        border-left: none;
+        border-right: none;
+        border-bottom: 3px solid blue;
 }
