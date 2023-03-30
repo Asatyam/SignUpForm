@@ -14,6 +14,9 @@ body{
     min-height: 100%;
     width: 100vw;
 }
+a{
+    text-decoration: none;
+}
 .main{
     display: flex;
     height: max(600px,100vh);  
@@ -81,7 +84,7 @@ body{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
-
+    box-shadow: 8px 1px 12px 1px rgba(0, 0, 255, .2);
     padding: 30px;
 }
 .description {
@@ -97,7 +100,8 @@ fieldset>h3{
 
 fieldset{
     background-color:var(--input-color);
-    box-shadow: 12px 5px 5px 1px rgba(0, 0, 255, .2);
+    box-shadow: 12px 3px 5px 1px rgba(0, 0, 255, .2);
+    border:none;
 }
 form{
         width: 100%;
@@ -134,4 +138,31 @@ input:focus{
         border-left: none;
         border-right: none;
         border-bottom: 3px solid blue;
+}
+.submit-button{
+    margin:24px 24px 18px 24px;
+     
+}
+.submit-button>button{
+
+    padding:8px 28px;
+    border-radius: 4px;
+    background-color:#88a4f3;
+    color:#fdfdfd;
+    font-weight: 900;
+    font-size:1rem;
+    transition: 0.1s ;
+    box-shadow: 5px 10px 5px 1px rgba(0, 0, 255, 0.2);
+} 
+.submit-button>button:hover{
+    background-color: #4f8fab ;
+    color:black;
+    box-shadow: 5px 8px 5px 1px #4f8fab;
+}
+
+.login{
+    margin:18px;
+}
+.login a:hover{
+    color:#88a4f3;
 }
