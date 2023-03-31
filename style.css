@@ -145,9 +145,7 @@ label{
 }
 
 input{
-    border-top: none;
-    border-left: none;
-    border-right: none;
+    
     font-size:1.2rem;
     padding:3px 10px;
     width: clamp(300px, 50%,400px);
@@ -189,14 +187,29 @@ input:focus{
     color:#88a4f3;
 }
 
+input:invalid{
+    border-bottom: 2px solid red;
+}
 
+input,input:focus:valid,input:focus:invalid{
+    border-top: none;
+    border-left: none;
+    border-right: none;
+}
+input:valid{
+    border-bottom: 1px solid rgba(20,150,20);
+}
 
+label>span{
+    position: relative;
+    top:5px;
+    font-size: 24px;
+    color:red;
+}
 
-
-
-
-
-
+input+.error{
+    
+}
 
 
 @media(max-width:750px){
